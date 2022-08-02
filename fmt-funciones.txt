@@ -1,0 +1,68 @@
+// 	/*******************************
+// 		funciones del paquete fmt
+// 	********************************/
+
+// 	helloMessage := "Hello"
+// 	worldMessage := "world"
+
+// 	//PrintLn
+// 	fmt.Println(helloMessage, worldMessage) //agrega un salto de linea de forma automatica
+
+// 	//Printf
+// 	nombre := "platzi"
+// 	cursos := 500
+
+// 	fmt.Printf("%s tiene mas de %d cursos \n", nombre, cursos)
+// 	//%v cualquier tipo NO RECOMENDADO
+// 	//%s string
+// 	//%d entero
+
+// 	//Sprintf
+// 	//para guardar strings que consideren variables en una variable
+// 	message := fmt.Sprintf("%s tiene mas de %d cursos \n", nombre, cursos)
+
+// 	fmt.Println(message)
+
+// 	//tipo de datos:
+// 	fmt.Printf("El Nombre:%T",nombre)
+// 	fmt.Printf("Los Cursos:%T",cursos)
+
+// }
+
+/************************************************************************************************************************
+*************************************************************************************************************************/
+
+//clase 2
+
+func normalFunc(message string) {
+	fmt.Println(message)
+}
+func complexFunc(a int, b int, c string) {
+	fmt.Println(a, b, c)
+}
+
+func returnValue(a int) int {
+	return a * 2
+}
+
+func doubleReturn(a int) (c, d int) {
+	return a, a * 3
+}
+
+// func main() {
+// 	normalFunc("Hola pequeñin")
+
+// 	complexFunc(1, 2, "Compleja")
+
+// 	returnValue(2)
+
+// 	value := returnValue(2)
+// 	fmt.Println(value)
+
+// 	value1, value2 := doubleReturn(3)
+
+// 	_, value3 := doubleReturn(2)
+
+// 	fmt.Println(value1, value2)
+// 	fmt.Println(value3)
+// }
