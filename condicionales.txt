@@ -1,0 +1,12 @@
+if condicion {
+
+}else
+
+para transformar strings a numeros
+
+value,err:=strconv.Atoi("53")
+
+if err!= nil{------> asi go maneja los errores, si no hay error el err sera igual a nil
+    log.Fatal(err) -----> esto imprime por consola el error y cancela la ejecucion
+}
+fmt.Println(value) -----> aqui no hace falta que use else porque si hay error la ejecucion se parara.
