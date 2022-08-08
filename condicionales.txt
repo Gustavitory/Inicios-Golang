@@ -10,3 +10,42 @@ if err!= nil{------> asi go maneja los errores, si no hay error el err sera igua
     log.Fatal(err) -----> esto imprime por consola el error y cancela la ejecucion
 }
 fmt.Println(value) -----> aqui no hace falta que use else porque si hay error la ejecucion se parara.
+
+
+CONDICIONAL MULTIPLE CON SWITCH:
+
+	/*****************************
+	         condicionales anidados switch
+	*****************************/
+	// modulo := 4 % 2
+
+	// switch modulo {
+	// case 0:
+	// 	fmt.Println("El numero es par")
+	// default:
+	// 	fmt.Println("Es impar")
+	// }
+
+	//****************************************************
+	//tambien puedo declarar la variable dentro del switch
+	//****************************************************
+
+	switch modulo := 4 % 2; modulo {
+	case 0:
+		fmt.Println("El numero es par")
+	default:
+		fmt.Println("Es impar")
+	}
+
+	//Tambien puedo dejar el switch abierto para evaluar segun mi gusto una o varias variables:
+
+	value := -90
+
+	switch {
+	case value > 100:
+		fmt.Println("Es mayor a 100")
+	case value < 0:
+		fmt.Println("es negativo")
+	default:
+		fmt.Println("sin condicion")
+	}

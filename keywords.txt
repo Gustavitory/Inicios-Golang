@@ -1,0 +1,23 @@
+	//USO DE LOS KEYWORDS DEFER, BREAK Y CONTINUE
+
+	//DEFER
+	defer fmt.Println("Hola") //defer hace que la funcion se ejecute antes de que el codigo termine.
+	//por ejemplo para cerrar conecciones o archivos cuando ya no los necesites
+	fmt.Println("Mundo")
+
+	//CONTINUE Y BREAK
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+		//Continue
+		if i == 2 {
+			fmt.Println("es dos")
+			continue // continue hace que luego que se ejecute esta funcion de arriba el bucle continue
+		}
+
+		//break
+		if i == 5 {
+			fmt.Println("Cortar")
+			break // ejecuta lo que esta dentro del if y termina con el bucle
+		}
+
+	}
